@@ -1,6 +1,6 @@
 <h1 align="center">
   <br>
-  <a href="https://tipe.io?ref=github-starter"><img src="https://cdn.tipe.io/tipe/tgr.png?w=800" alt="Tipe + GraphQL + React"></a>
+  <a href="https://tipe.io?ref=github-starter"><img src="https://cdn.tipe.io/tipe/tgr.png?dpr=2&w=800" width="800" alt="Tipe + GraphQL + React"></a>
   <br>
   Tipe + GraphQL + React
   <br>
@@ -51,7 +51,7 @@ Most of the content you see on the app is from Tipe. Take a look at the `/apollo
 * [facebook](https://facebook.com/TipeCMS)
 * [slack](https://join.slack.com/t/tipe-community/shared_invite/enQtMzE0NTAwMTMwNzM5LTk0ZWIyYWQ0YWY3ZGEwYWE2ZmVkNmRjMTMzMDU5YWI5ZjdkODcxNzNjMzU2NTU1NmM2M2MyN2QyYWJhNzc5NjE)
 * [github](https://github.com/tipeio)
-* [tipe-awesome](https://github.com/tipeio/awesome-tipe)
+* [awesome-tipe](https://github.com/tipeio/awesome-tipe)
 
 ## License
 MIT
