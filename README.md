@@ -1,51 +1,50 @@
-[![Deploy to now](https://deploy.now.sh/static/button.svg)](https://deploy.now.sh/?repo=https://github.com/zeit/next.js/tree/master/examples/with-apollo)
-# Apollo Example
+<h1 align="center">
+  <br>
+  <a href="https://tipe.io?ref=github-starter"><img src="https://cdn.tipe.io/tipe/tgr.png?w=800" alt="Tipe + GraphQL + React"></a>
+  <br>
+  Tipe + GraphQL + Vue
+  <br>
+</h1>
 
-## Demo
 
-https://next-with-apollo.now.sh
+> :tada: Starter repo for [Vue](https://vuejs.org/) and [Nuxt](https://nuxtjs.org/), together with [GraphQL](http://graphql.org/) and [Tipe](https://tipe.io) :100:
 
-## How to use
+## What is Tipe
+[Tipe](https://tipe.io), pronounced *type*, is a content backend for all your apps. If you have any non-user generated content in your apps, you should use Tipe to manage it. You and content creators can use our web app to create and publish content, then consume that same content with our **REST** and **GraphQL** API's. 
 
-### Using `create-next-app`
+## What is this repo
+This repo is a solid starting point for anyone looking to build a Universal, SPA, or Static site with React and Tipe. The repo consists of a simple blog application that consumes content from Tipe via GraphQL.
 
-Download [`create-next-app`](https://github.com/segmentio/create-next-app) to bootstrap the example:
+## Tech in this repo
+* [Next](https://zeit.co/next/) and [React](https://reactjs.org/)
+* [GraphQL](http://graphql.org/) and [Apollo](https://www.apollographql.com/client)
+* [Bulma](https://bulma.io/)
 
-```
-npm i -g create-next-app
-create-next-app --example with-apollo with-apollo-app
-```
 
-### Download manually
+## Things you'll need
+* Node *(version is whatever Next needs)*
+* An account on [Tipe](https://tipe.io?ref=github-starter)
+	* **Tipe is free right now!**
 
-Download the example [or clone the repo](https://github.com/zeit/next.js):
+## Getting started
+* Clone this repo
+* Install dependences
+	* `yarn` or `npm install`
+* Create a `.env` file on the **root** of this repo. Copy over the contents from `.sample.env`.
+* Replace the env values with your API Key and Org ID from the Tipe dashboard.
+* Run `yarn dev` or `npm run dev`'
+	* this will start Next dev Universal mode
 
-```bash
-curl https://codeload.github.com/zeit/next.js/tar.gz/canary | tar -xz --strip=2 next.js-canary/examples/with-apollo
-cd with-apollo
-```
+## Things to notice
+Apollo will fetch the content from your `tutorial` folder on your Tipe account. Because Next is running in Universal mode, the content is rendered with the App and then cached and transferred to the client side.
 
-Install it and run:
+Most of the content you see on the app is from Tipe. Take a look at the `/apollo/query/` folder. Notice the queries and how they relate to your content on the Tipe dashboard in the `tutorial` folder. There's no reason why all the content on this starter app couldn't be stored in Tipe. It's non-user generated, and as a developer, you should never hard code content.
 
-```bash
-npm install
-npm run dev
-```
+## Contributing
+* Fork and cut a PR, we'll check it out :sunglasses:
 
-Deploy it to the cloud with [now](https://zeit.co/now) ([download](https://zeit.co/download)):
+## Related
+* [Tipe + GraphQL + Vue starter](https://github.com/tipeio/tipe-vue-starter)
 
-```bash
-now
-```
-
-## The idea behind the example
-
-[Apollo](http://dev.apollodata.com) is a GraphQL client that allows you to easily query the exact data you need from a GraphQL server. In addition to fetching and mutating data, Apollo analyzes your queries and their results to construct a client-side cache of your data, which is kept up to date as further queries and mutations are run, fetching more results from the server.
-
-In this simple example, we integrate Apollo seamlessly with Next by wrapping our *pages* inside a [higher-order component (HOC)](https://facebook.github.io/react/docs/higher-order-components.html). Using the HOC pattern we're able to pass down a central store of query result data created by Apollo into our React component hierarchy defined inside each page of our Next application.
-
-On initial page load, while on the server and inside `getInitialProps`, we invoke the Apollo method,  [`getDataFromTree`](http://dev.apollodata.com/react/server-side-rendering.html#getDataFromTree). This method returns a promise; at the point in which the promise resolves, our Apollo Client store is completely initialized.
-
-This example relies on [graph.cool](https://www.graph.cool) for its GraphQL backend.
-
-*Note: Apollo uses Redux internally; if you're interested in integrating the client with your existing Redux store check out the [`with-apollo-and-redux`](https://github.com/zeit/next.js/tree/master/examples/with-apollo-and-redux) example.*
+## License
+MIT
