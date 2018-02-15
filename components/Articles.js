@@ -1,10 +1,10 @@
-import Link from 'next/link'
+import {Link} from '../routes'
 import { graphql } from 'react-apollo'
 import gql from 'graphql-tag'
 
 const Article = ({article}) => (
   <div className="column is-6">
-    <Link href={'/blog' + article.urlSlug}>
+    <Link prefetch route='article' params={{article: article.urlSlug}}>
       <div className="card">
         <div className="card-image">
           <figure className="image is-square">

@@ -41,7 +41,7 @@ class Hero extends Component {
               <h2 className="subtitle">Tipe</h2>
             </div>
     
-            <div className="column is-1 is-narrow">
+            <div className="column is-1 is-narrow has-text-centered">
               <h1 className="title">+</h1>
             </div>
     
@@ -51,7 +51,7 @@ class Hero extends Component {
               </figure>
               <h2 className="subtitle">React</h2>
             </div>
-            <div className="column is-1 is-narrow">
+            <div className="column is-1 is-narrow has-text-centered">
               <h1 className="title">+</h1>
             </div>
             <div className="column is-narrow has-text-centered">
