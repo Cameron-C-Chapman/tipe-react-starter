@@ -46,5 +46,12 @@ Most of the content you see on the app is from Tipe. Take a look at the `/apollo
 ## Related
 * [Tipe + GraphQL + Vue starter](https://github.com/tipeio/tipe-vue-starter)
 
+## Tipe Community
+* [twitter @TipeIO](https://twitter.com/tipeio)
+* [facebook](https://facebook.com/TipeCMS)
+* [slack](https://join.slack.com/t/tipe-community/shared_invite/enQtMzE0NTAwMTMwNzM5LTk0ZWIyYWQ0YWY3ZGEwYWE2ZmVkNmRjMTMzMDU5YWI5ZjdkODcxNzNjMzU2NTU1NmM2M2MyN2QyYWJhNzc5NjE)
+* [github](https://github.com/tipeio)
+* [tipe-awesome](https://github.com/tipeio/awesome-tipe)
+
 ## License
 MIT
