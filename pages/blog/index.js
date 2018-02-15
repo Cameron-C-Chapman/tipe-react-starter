@@ -1,7 +1,16 @@
 import App from '../../components/App'
+import Articles from '../../components/Articles'
+import withData from '../../lib/withData'
 
-export default () => (
+export default withData(() => (
   <App>
-    <h1>blog</h1>
+    <section className="section page">
+      <div>
+        <h1 className="title">
+          Blog
+        </h1>
+      </div>
+     <Articles />
+    </section>
   </App>
-)
+))

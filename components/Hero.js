@@ -1,4 +1,3 @@
-import Link from 'next/link'
 import { withRouter } from 'next/router'
 import React, { Component } from 'react'
 import Markdown from 'react-markdown'
@@ -117,7 +116,6 @@ export const homePage = gql`
 export default graphql(homePage, {
   props: ({data}) => {
     if (!data.loading) {
-      debugger
       return {
         page: data.pages[0],
         tweet: data.tweets[0]
