@@ -1,9 +1,29 @@
 import Link from 'next/link'
 import { withRouter } from 'next/router'
 import React, { Component } from 'react'
-
+import Markdown from 'react-markdown'
+import { graphql } from 'react-apollo'
+import gql from 'graphql-tag'
 
 class Hero extends Component {
+  static defaultProps = {
+    page: {},
+    tweet: {}
+  }
+  componentDidMount() {
+    const {tweet} = this.props
+    if (window.twttr.widgets) {
+      window.twttr.widgets.createShareButton(
+        '/',
+        this.twitterBtn,
+        {
+          text: tweet.message,
+          url: tweet.url,
+          hashtags: tweet.hashtags
+        }
+      )
+    }
+  }
   render () {
     return (
       <section className="hero">
@@ -28,9 +48,9 @@ class Hero extends Component {
     
             <div className="column is-narrow has-text-centered">
               <figure className="image is-128x128">
-                <img src="https://cdn.tipe.io/tipe/nuxt.png?w=256" alt="Nuxt" />
+                <img src="https://cdn.tipe.io/tipe/react.png?w=256" alt="React js" />
               </figure>
-              <h2 className="subtitle">Nuxt</h2>
+              <h2 className="subtitle">React</h2>
             </div>
             <div className="column is-1 is-narrow">
               <h1 className="title">+</h1>
@@ -46,7 +66,7 @@ class Hero extends Component {
               <div className="columns is-centered">
                 <div className="column is-6">
                   <div className="content is-large">
-                    
+                    <Markdown source={this.props.page.mainContent} />
                   </div>
                 </div>
               </div>
@@ -60,11 +80,11 @@ class Hero extends Component {
                 </div>
                 <div className="column is-narrow">
                   <a className="button is-primary is-outlined" href="https://docs.tipe.io" target="_blank">
-                    hello
+                    {this.props.page.headerCtaText}
                   </a>
                 </div>
                 <div className="column is-narrow">
-                  <a className="button is-text" ref="twitter"></a>
+                  <a className="button is-text" ref={(e) => this.twitterBtn = e}></a>
                 </div>
               </div>
             </div>
@@ -75,4 +95,33 @@ class Hero extends Component {
   }
 }
 
-export default withRouter(Hero)
+
+export const homePage = gql`
+  query Pages {
+    pages: allPageExamples {
+      headerCtaText
+      mainContent
+      _meta {
+        id
+        name
+      }
+    }
+    tweets: allTweetExamples {
+      message
+      url
+      hashtags
+    }
+  }
+`
+
+export default graphql(homePage, {
+  props: ({data}) => {
+    if (!data.loading) {
+      debugger
+      return {
+        page: data.pages[0],
+        tweet: data.tweets[0]
+      }
+    }
+  }
+})(Hero)
