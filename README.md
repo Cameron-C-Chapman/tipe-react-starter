@@ -2,12 +2,12 @@
   <br>
   <a href="https://tipe.io?ref=github-starter"><img src="https://cdn.tipe.io/tipe/tgr.png?w=800" alt="Tipe + GraphQL + React"></a>
   <br>
-  Tipe + GraphQL + Vue
+  Tipe + GraphQL + React
   <br>
 </h1>
 
 
-> :tada: Starter repo for [Vue](https://vuejs.org/) and [Nuxt](https://nuxtjs.org/), together with [GraphQL](http://graphql.org/) and [Tipe](https://tipe.io) :100:
+> :tada: Starter repo for [React](https://reactjs.org/) and [Next](https://zeit.co/next), together with [GraphQL](http://graphql.org/) and [Tipe](https://tipe.io?ref=github-starter) :100:
 
 ## What is Tipe
 [Tipe](https://tipe.io), pronounced *type*, is a content backend for all your apps. If you have any non-user generated content in your apps, you should use Tipe to manage it. You and content creators can use our web app to create and publish content, then consume that same content with our **REST** and **GraphQL** API's. 
