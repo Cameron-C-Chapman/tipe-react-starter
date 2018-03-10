@@ -1,6 +1,16 @@
 {
   "name": "with-apollo",
   "version": "2.0.0",
+  "contributors": [
+    "PatrickJS <patrick@tipe.io>",
+    "Scott Moss <scott@tipe.io>",
+    "Mike Moss <mike@tipe.io>"
+  ],
+  "engines": {
+    "node" : ">=8"
+  },
+  "private": true,
+  "license": "Apache-2.0",
   "scripts": {
     "dev": "node server.js",
     "build": "next build",
@@ -23,8 +33,6 @@
     "react-dom": "^16.2.0",
     "react-markdown": "^3.2.0"
   },
-  "author": "",
-  "license": "ISC",
   "devDependencies": {
     "@zeit/next-sass": "^0.0.9",
     "node-sass": "^4.7.2"
