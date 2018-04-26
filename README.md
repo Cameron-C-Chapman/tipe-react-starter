@@ -30,7 +30,7 @@ This repo is a solid starting point for anyone looking to build a Universal, SPA
 * Clone this repo
 * Install dependences
 	* `yarn` or `npm install`
-* Create a `.env` file on the **root** of this repo. Copy over the contents from `.sample.env`.
+* Create a `.env` file on the **root** of this repo. Copy over the contents from `.env.sample`.
 * Replace the env values with your API Key and Org ID from the Tipe dashboard.
 * Run `yarn dev` or `npm run dev`'
 	* this will start Next dev Universal mode
