@@ -36,9 +36,9 @@ This repo is a solid starting point for anyone looking to build a Universal, SPA
 	* this will start Next dev Universal mode
 
 ## Things to notice
-Apollo will fetch the content from your `tutorial` folder on your Tipe account. Because Next is running in Universal mode, the content is rendered with the App and then cached and transferred to the client side.
+Apollo will fetch the content from your `Starter Repo Docs` folder on your Tipe account. Because Next.js is running in Universal mode, the content is rendered with the App and then cached and transferred to the client side.
 
-Most of the content you see on the app is from Tipe. Take a look at the `/apollo/query/` folder. Notice the queries and how they relate to your content on the Tipe dashboard in the `tutorial` folder. There's no reason why all the content on this starter app couldn't be stored in Tipe. It's non-user generated, and as a developer, you should never hard code content.
+Most of the content you see on the app is from Tipe. Take a look at the `/components/` folder. Notice the queries and how they relate to your content on the Tipe dashboard in the `Starter Repo Docs` folder. There's no reason why all the content on this starter app couldn't be stored in Tipe. It's non-user generated, and as a developer, you should never hard code content.
 
 ## Contributing
 * Fork and cut a PR, we'll check it out :sunglasses:
