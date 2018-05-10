@@ -1,6 +1,6 @@
 <h1 align="center">
   <br>
-  <a href="https://tipe.io?ref=github-starter"><img src="https://cdn.tipe.io/tipe/tgr.png?dpr=2&w=800" width="800" alt="Tipe + GraphQL + React"></a>
+  <a href="https://tipe.io?ref=github-starter"><img src="https://cdn.tipe.io/tipe/tgr.png?dpr=2&w=800&auto=compress" width="800" alt="Tipe + GraphQL + React"></a>
   <br>
   Tipe + GraphQL + React
   <br>
