@@ -49,7 +49,7 @@ Most of the content you see on the app is from Tipe. Take a look at the `/compon
 ## Tipe Community
 * [Twitter @TipeIO](https://twitter.com/tipeio)
 * [Facebook](https://facebook.com/TipeCMS)
-* [Slack](https://join.slack.com/t/tipe-community/shared_invite/enQtMzE0NTAwMTMwNzM5LTk0ZWIyYWQ0YWY3ZGEwYWE2ZmVkNmRjMTMzMDU5YWI5ZjdkODcxNzNjMzU2NTU1NmM2M2MyN2QyYWJhNzc5NjE)
+* [Slack](https://chat.tipe.io/)
 * [Github](https://github.com/tipeio)
 * [Linkedin](https://www.linkedin.com/company/tipeio/)
 * [awesome-tipe](https://github.com/tipeio/awesome-tipe)
